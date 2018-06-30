@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{87B949CC-DCB9-3A3A-9F17-1AC90956C5FD}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\Bubusk\GLFW\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule F:/Bubusk/GLFW/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+F:\CMake\bin\cmake.exe -HF:/Bubusk/GLFW -BF:/Bubusk/build --check-stamp-file F:/Bubusk/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:/Bubusk/GLFW/CMakeLists.txt;F:\Bubusk\GLFW\CMake\modules\FindVulkan.cmake;F:\Bubusk\GLFW\CMakeLists.txt;F:\Bubusk\GLFW\cmake_uninstall.cmake.in;F:\Bubusk\GLFW\src\glfw3.pc.in;F:\Bubusk\GLFW\src\glfw3Config.cmake.in;F:\Bubusk\GLFW\src\glfw_config.h.in;F:\Bubusk\build\CMakeFiles\3.12.0-rc1\CMakeCCompiler.cmake;F:\Bubusk\build\CMakeFiles\3.12.0-rc1\CMakeRCCompiler.cmake;F:\Bubusk\build\CMakeFiles\3.12.0-rc1\CMakeSystem.cmake;F:\Bubusk\build\CMakeFiles\feature_tests.c;F:\CMake\share\cmake-3.12\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;F:\CMake\share\cmake-3.12\Modules\CMakeCCompiler.cmake.in;F:\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c;F:\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeCompilerIdDetection.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineCCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineCompileFeatures.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerABI.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerId.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineRCCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineSystem.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeFindBinUtils.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;F:\CMake\share\cmake-3.12\Modules\CMakePackageConfigHelpers.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeParseImplicitLinkInfo.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeRCCompiler.cmake.in;F:\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeSystem.cmake.in;F:\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeTestCCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeTestCompilerCommon.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeTestRCCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CheckIncludeFile.c.in;F:\CMake\share\cmake-3.12\Modules\CheckIncludeFile.cmake;F:\CMake\share\cmake-3.12\Modules\CheckLibraryExists.cmake;F:\CMake\share\cmake-3.12\Modules\CheckSymbolExists.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\ADSP-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\ARMCC-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\AppleClang-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Borland-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Cray-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\GHS-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\GNU-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\HP-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\IAR-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Intel-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C-FeatureTests.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\MSVC-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\PGI-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\PathScale-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\SCO-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\TI-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Watcom-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\XL-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\zOS-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CompilerId\VS-10.vcxproj.in;F:\CMake\share\cmake-3.12\Modules\FindDoxygen.cmake;F:\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;F:\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;F:\CMake\share\cmake-3.12\Modules\FindThreads.cmake;F:\CMake\share\cmake-3.12\Modules\Internal\FeatureTesting.cmake;F:\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;F:\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;F:\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;F:\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;F:\CMake\share\cmake-3.12\Modules\WriteBasicConfigVersionFile.cmake;F:\Bubusk\GLFW\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">F:\Bubusk\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule F:/Bubusk/GLFW/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+F:\CMake\bin\cmake.exe -HF:/Bubusk/GLFW -BF:/Bubusk/build --check-stamp-file F:/Bubusk/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:/Bubusk/GLFW/CMakeLists.txt;F:\Bubusk\GLFW\CMake\modules\FindVulkan.cmake;F:\Bubusk\GLFW\CMakeLists.txt;F:\Bubusk\GLFW\cmake_uninstall.cmake.in;F:\Bubusk\GLFW\src\glfw3.pc.in;F:\Bubusk\GLFW\src\glfw3Config.cmake.in;F:\Bubusk\GLFW\src\glfw_config.h.in;F:\Bubusk\build\CMakeFiles\3.12.0-rc1\CMakeCCompiler.cmake;F:\Bubusk\build\CMakeFiles\3.12.0-rc1\CMakeRCCompiler.cmake;F:\Bubusk\build\CMakeFiles\3.12.0-rc1\CMakeSystem.cmake;F:\Bubusk\build\CMakeFiles\feature_tests.c;F:\CMake\share\cmake-3.12\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;F:\CMake\share\cmake-3.12\Modules\CMakeCCompiler.cmake.in;F:\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c;F:\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeCompilerIdDetection.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineCCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineCompileFeatures.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerABI.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerId.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineRCCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineSystem.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeFindBinUtils.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;F:\CMake\share\cmake-3.12\Modules\CMakePackageConfigHelpers.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeParseImplicitLinkInfo.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeRCCompiler.cmake.in;F:\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeSystem.cmake.in;F:\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeTestCCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeTestCompilerCommon.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeTestRCCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CheckIncludeFile.c.in;F:\CMake\share\cmake-3.12\Modules\CheckIncludeFile.cmake;F:\CMake\share\cmake-3.12\Modules\CheckLibraryExists.cmake;F:\CMake\share\cmake-3.12\Modules\CheckSymbolExists.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\ADSP-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\ARMCC-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\AppleClang-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Borland-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Cray-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\GHS-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\GNU-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\HP-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\IAR-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Intel-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C-FeatureTests.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\MSVC-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\PGI-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\PathScale-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\SCO-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\TI-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Watcom-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\XL-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\zOS-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CompilerId\VS-10.vcxproj.in;F:\CMake\share\cmake-3.12\Modules\FindDoxygen.cmake;F:\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;F:\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;F:\CMake\share\cmake-3.12\Modules\FindThreads.cmake;F:\CMake\share\cmake-3.12\Modules\Internal\FeatureTesting.cmake;F:\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;F:\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;F:\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;F:\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;F:\CMake\share\cmake-3.12\Modules\WriteBasicConfigVersionFile.cmake;F:\Bubusk\GLFW\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">F:\Bubusk\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule F:/Bubusk/GLFW/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+F:\CMake\bin\cmake.exe -HF:/Bubusk/GLFW -BF:/Bubusk/build --check-stamp-file F:/Bubusk/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:/Bubusk/GLFW/CMakeLists.txt;F:\Bubusk\GLFW\CMake\modules\FindVulkan.cmake;F:\Bubusk\GLFW\CMakeLists.txt;F:\Bubusk\GLFW\cmake_uninstall.cmake.in;F:\Bubusk\GLFW\src\glfw3.pc.in;F:\Bubusk\GLFW\src\glfw3Config.cmake.in;F:\Bubusk\GLFW\src\glfw_config.h.in;F:\Bubusk\build\CMakeFiles\3.12.0-rc1\CMakeCCompiler.cmake;F:\Bubusk\build\CMakeFiles\3.12.0-rc1\CMakeRCCompiler.cmake;F:\Bubusk\build\CMakeFiles\3.12.0-rc1\CMakeSystem.cmake;F:\Bubusk\build\CMakeFiles\feature_tests.c;F:\CMake\share\cmake-3.12\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;F:\CMake\share\cmake-3.12\Modules\CMakeCCompiler.cmake.in;F:\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c;F:\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeCompilerIdDetection.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineCCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineCompileFeatures.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerABI.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerId.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineRCCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineSystem.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeFindBinUtils.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;F:\CMake\share\cmake-3.12\Modules\CMakePackageConfigHelpers.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeParseImplicitLinkInfo.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeRCCompiler.cmake.in;F:\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeSystem.cmake.in;F:\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeTestCCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeTestCompilerCommon.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeTestRCCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CheckIncludeFile.c.in;F:\CMake\share\cmake-3.12\Modules\CheckIncludeFile.cmake;F:\CMake\share\cmake-3.12\Modules\CheckLibraryExists.cmake;F:\CMake\share\cmake-3.12\Modules\CheckSymbolExists.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\ADSP-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\ARMCC-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\AppleClang-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Borland-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Cray-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\GHS-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\GNU-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\HP-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\IAR-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Intel-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C-FeatureTests.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\MSVC-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\PGI-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\PathScale-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\SCO-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\TI-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Watcom-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\XL-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\zOS-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CompilerId\VS-10.vcxproj.in;F:\CMake\share\cmake-3.12\Modules\FindDoxygen.cmake;F:\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;F:\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;F:\CMake\share\cmake-3.12\Modules\FindThreads.cmake;F:\CMake\share\cmake-3.12\Modules\Internal\FeatureTesting.cmake;F:\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;F:\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;F:\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;F:\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;F:\CMake\share\cmake-3.12\Modules\WriteBasicConfigVersionFile.cmake;F:\Bubusk\GLFW\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">F:\Bubusk\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule F:/Bubusk/GLFW/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+F:\CMake\bin\cmake.exe -HF:/Bubusk/GLFW -BF:/Bubusk/build --check-stamp-file F:/Bubusk/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:/Bubusk/GLFW/CMakeLists.txt;F:\Bubusk\GLFW\CMake\modules\FindVulkan.cmake;F:\Bubusk\GLFW\CMakeLists.txt;F:\Bubusk\GLFW\cmake_uninstall.cmake.in;F:\Bubusk\GLFW\src\glfw3.pc.in;F:\Bubusk\GLFW\src\glfw3Config.cmake.in;F:\Bubusk\GLFW\src\glfw_config.h.in;F:\Bubusk\build\CMakeFiles\3.12.0-rc1\CMakeCCompiler.cmake;F:\Bubusk\build\CMakeFiles\3.12.0-rc1\CMakeRCCompiler.cmake;F:\Bubusk\build\CMakeFiles\3.12.0-rc1\CMakeSystem.cmake;F:\Bubusk\build\CMakeFiles\feature_tests.c;F:\CMake\share\cmake-3.12\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;F:\CMake\share\cmake-3.12\Modules\CMakeCCompiler.cmake.in;F:\CMake\share\cmake-3.12\Modules\CMakeCCompilerABI.c;F:\CMake\share\cmake-3.12\Modules\CMakeCInformation.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeCommonLanguageInclude.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeCompilerIdDetection.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineCCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineCompileFeatures.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerABI.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineCompilerId.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineRCCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeDetermineSystem.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeFindBinUtils.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeGenericSystem.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeInitializeConfigs.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeLanguageInformation.cmake;F:\CMake\share\cmake-3.12\Modules\CMakePackageConfigHelpers.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeParseImplicitLinkInfo.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeRCCompiler.cmake.in;F:\CMake\share\cmake-3.12\Modules\CMakeRCInformation.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeSystem.cmake.in;F:\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInformation.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeSystemSpecificInitialize.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeTestCCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeTestCompilerCommon.cmake;F:\CMake\share\cmake-3.12\Modules\CMakeTestRCCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CheckIncludeFile.c.in;F:\CMake\share\cmake-3.12\Modules\CheckIncludeFile.cmake;F:\CMake\share\cmake-3.12\Modules\CheckLibraryExists.cmake;F:\CMake\share\cmake-3.12\Modules\CheckSymbolExists.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\ADSP-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\ARMCC-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\AppleClang-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Borland-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Cray-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\GHS-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\GNU-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\HP-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\IAR-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Intel-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\MIPSpro-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C-FeatureTests.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\MSVC-C.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\MSVC-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\PGI-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\PathScale-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\SCO-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\TI-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\Watcom-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\XL-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\Compiler\zOS-C-DetermineCompiler.cmake;F:\CMake\share\cmake-3.12\Modules\CompilerId\VS-10.vcxproj.in;F:\CMake\share\cmake-3.12\Modules\FindDoxygen.cmake;F:\CMake\share\cmake-3.12\Modules\FindPackageHandleStandardArgs.cmake;F:\CMake\share\cmake-3.12\Modules\FindPackageMessage.cmake;F:\CMake\share\cmake-3.12\Modules\FindThreads.cmake;F:\CMake\share\cmake-3.12\Modules\Internal\FeatureTesting.cmake;F:\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC-C.cmake;F:\CMake\share\cmake-3.12\Modules\Platform\Windows-MSVC.cmake;F:\CMake\share\cmake-3.12\Modules\Platform\Windows.cmake;F:\CMake\share\cmake-3.12\Modules\Platform\WindowsPaths.cmake;F:\CMake\share\cmake-3.12\Modules\WriteBasicConfigVersionFile.cmake;F:\Bubusk\GLFW\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">F:\Bubusk\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\Bubusk\build\ZERO_CHECK.vcxproj">
+      <Project>{5B5E0DB9-C350-3138-83F5-9B6CDC2C2DBE}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\examples\boing.vcxproj">
+      <Project>{30C7552C-5947-39A8-AFB9-447AA0D18972}</Project>
+      <Name>boing</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\tests\clipboard.vcxproj">
+      <Project>{D7D6AE7F-D0ED-3872-BC7D-477DAD5A642D}</Project>
+      <Name>clipboard</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\tests\cursor.vcxproj">
+      <Project>{AD47B9EB-AEF5-3ECC-8F1D-F405442AB6BD}</Project>
+      <Name>cursor</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\tests\empty.vcxproj">
+      <Project>{141740CB-1501-311A-B10B-1E83ABC9CA3F}</Project>
+      <Name>empty</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\tests\events.vcxproj">
+      <Project>{25CB0C40-9C68-3F3C-8B05-4C65AD912AE1}</Project>
+      <Name>events</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\tests\gamma.vcxproj">
+      <Project>{D9F20206-50A0-3750-91D6-232CC40D6F6C}</Project>
+      <Name>gamma</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\examples\gears.vcxproj">
+      <Project>{CD16953E-8DEA-3202-87D8-D3235971586B}</Project>
+      <Name>gears</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\src\glfw.vcxproj">
+      <Project>{23CF8848-33D7-3D94-AA93-50E75085A48B}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\tests\glfwinfo.vcxproj">
+      <Project>{C7960175-195A-331B-BC6E-2B02A7B1F354}</Project>
+      <Name>glfwinfo</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\examples\heightmap.vcxproj">
+      <Project>{3E19E83E-204F-392F-92FC-C13E07349DDF}</Project>
+      <Name>heightmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\tests\icon.vcxproj">
+      <Project>{DEB99B6F-CC4E-3F42-8E5F-67D439358FB9}</Project>
+      <Name>icon</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\tests\iconify.vcxproj">
+      <Project>{8279541D-5ECB-3F9B-9022-F2269BB013E0}</Project>
+      <Name>iconify</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\tests\joysticks.vcxproj">
+      <Project>{FA95CE51-E949-303F-8D89-EAE1BC222870}</Project>
+      <Name>joysticks</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\tests\monitors.vcxproj">
+      <Project>{991AE3CC-07B0-339F-8EEE-B95973349CA2}</Project>
+      <Name>monitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\tests\msaa.vcxproj">
+      <Project>{93E6920C-2E28-3953-9FA3-4C38CDE13A5F}</Project>
+      <Name>msaa</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\examples\particles.vcxproj">
+      <Project>{661C9AEA-7931-3A53-BF83-4C9EB6A75E09}</Project>
+      <Name>particles</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\tests\reopen.vcxproj">
+      <Project>{C61286DD-D9CE-330C-AB1E-2AE9FFA256CD}</Project>
+      <Name>reopen</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\tests\sharing.vcxproj">
+      <Project>{D537A167-2CA6-351C-B8D7-26516C4DCC34}</Project>
+      <Name>sharing</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\examples\simple.vcxproj">
+      <Project>{4EF2E7CF-4C38-380C-ACA5-A84FAAA85554}</Project>
+      <Name>simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\examples\splitview.vcxproj">
+      <Project>{696C456A-4FF4-3902-9876-3FF27F4350E5}</Project>
+      <Name>splitview</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\tests\tearing.vcxproj">
+      <Project>{1DFC5C4F-22F4-3270-B757-56EA5CC6CE11}</Project>
+      <Name>tearing</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\tests\threads.vcxproj">
+      <Project>{F652FCC9-0935-3E4F-8D80-1E76CCCF98FE}</Project>
+      <Name>threads</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\tests\timeout.vcxproj">
+      <Project>{9D204EAA-D670-33CA-A9F8-398430CDF273}</Project>
+      <Name>timeout</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\tests\title.vcxproj">
+      <Project>{4694A0FA-03C8-3780-9D46-F5A0BA821A1B}</Project>
+      <Name>title</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\examples\wave.vcxproj">
+      <Project>{A8E6A6D3-E47B-32EA-8B2B-650C3A391798}</Project>
+      <Name>wave</Name>
+    </ProjectReference>
+    <ProjectReference Include="F:\Bubusk\build\tests\windows.vcxproj">
+      <Project>{E6CFE680-4AC6-3334-9E44-076B031234B6}</Project>
+      <Name>windows</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

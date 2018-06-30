@@ -1,0 +1,6 @@
+﻿  Building Custom Rule F:/Bubusk/GLFW/tests/CMakeLists.txt
+  CMake does not need to re-run because F:/Bubusk/build/tests/CMakeFiles/generate.stamp is up-to-date.
+  reopen.c
+  glad.c
+  Generating Code...
+  reopen.vcxproj -> F:\Bubusk\build\tests\Debug\reopen.exe
